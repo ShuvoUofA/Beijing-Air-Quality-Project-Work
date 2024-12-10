@@ -50,16 +50,13 @@
 - **Training Dataset:**
   - The dataset includes hourly pollutant and weather data, split into training (80%) and testing (20%) datasets.
   - **Data Sources:**
-    - [X_train](https://drive.google.com/file/d/1g-WchMrKqXkk8P9yY7Qk1v4MnMg5zXHo/view?usp=drive_link)
-    - [Y_train](https://drive.google.com/file/d/1uCkugZ30YCAL3CyEj4vLRyR4KU-WH7dj/view?usp=drive_link)
-    - [X_test](https://drive.google.com/file/d/1yU6uCm8YYGd6ok_Ox0O8TwLLzxdshOPQ/view?usp=drive_link)
-    - [Y_test](https://drive.google.com/file/d/1dOm6vCVqncJUnPGvhlU6tlrt3GnVA4SK/view?usp=drive_link)
+    - All the date scource files for Train and Test are uploaded in the Dateset files folder.
 
 - **Evaluation Metrics:**
   - The model is evaluated using common regression metrics:
-    - **Mean Absolute Error (MAE)**
-    - **Root Mean Squared Error (RMSE)**
-    - **R-squared (R²) Score**
+    - Mean Absolute Error (MAE)
+    - Root Mean Squared Error (RMSE)
+    - R-squared (R²) Score
   - The evaluation is conducted on the held-out test dataset to assess how well the model generalizes to unseen data.
 
 - **Baseline Comparison:**
@@ -105,7 +102,7 @@
   - Guan, D. et al. *Environmental Science & Technology*, 2016. [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC7652049/)
   - Bekkar, A. et al. *Journal of Big Data*, 2021. [Link](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00548-1)
   - *World Health Organization*. Ambient (Outdoor) Air Pollution, 2018. [Link](https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health)
-
-- **License:** TBD
-- **Contact Information:** Shuvo Biswas (shuvo.biswas@university.edu), Nasim Zaman Piyas (nasim.piyas@university.edu)
+For further understanding, please see all the relevent references in the References folder.
+- **License:** ENG M 680 - Adavance Topics in Engineering Management II
+- **Contact Information:** Shuvo Biswas (shuvo.biswas@ualberta.ca), Nasim Zaman Piyas (nasim.piyas@ualberta.ca), Maryum Ali (maryum4@ualberta.ca)
 
