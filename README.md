@@ -50,3 +50,62 @@ The repository is organized into the following folders and files:
 
 - **Architecture Diagrams**: A file containing visual representations of the model architecture, which helps in understanding the flow of data and the components involved.
 - **README.md**: The README file that provides an overview of the project, instructions for running the code, and other relevant information.
+
+# Air Quality Prediction Project
+
+This repository contains the code for predicting air quality based on pollutant data and weather conditions. It includes models ranging from basic linear regression to more complex RNNs and LSTMs for time-series forecasting.
+
+## Project Breakdown
+1. **Pre-Processing**
+2. **Initial Data Exploration (EDA)**
+3. **Feature Engineering**
+4. **Training and Evaluation Pipeline**
+   -**Simple Models**
+   
+### 1. Preprocessing
+ -Load the dataset using your preferred library (e.g., pandas for CSV files).
+ -Check for missing values with data.isnull().sum() and handle them using imputation or removal techniques.
+ -Detect and handle outliers using methods like Z-scores or the IQR rule.
+ -Normalize numerical features using tools like StandardScaler or MinMaxScaler from sklearn.
+ -Encode categorical variables with one-hot encoding or label encoding (LabelEncoder).
+
+### 2. Initial EDA
+  -Inspect the dataset's structure using data.info() and data.describe().
+  -Visualize feature distributions using histograms or KDE plots (seaborn.distplot).
+  -Identify correlations using a heatmap (seaborn.heatmap).
+  -Plot pairwise relationships between numerical variables using seaborn.pairplot.
+
+### 3. Feature Engineering
+  -Extract new features, such as datetime attributes.
+  -Combine or split columns as needed (e.g., extract prefixes, create ratios).
+  -Perform feature selection using methods like correlation thresholds or sklearn.feature_selection. 
+  -Save the transformed dataset for consistency across steps.
+
+### 4. Training and Evaluation Pipeline
+  -Split the dataset into training and testing subsets using train_test_split.
+  -Train a baseline model to establish a benchmark.
+  -Train advanced models, optimizing their hyperparameters with tools like GridSearchCV.
+  -Evaluate model performance on the test set using metrics like accuracy or RMSE.
+  -Save the best-performing model for deployment (joblib.dump or pickle).
+
+### Simple Models
+We explore basic regression models, including:
+- Linear Regression
+- Lasso Regression
+- PCA-based Regression
+- Random Forest
+- XGBoost, and Support Vector Regressors
+
+**Steps for Simple Models:**
+- Import libraries and upload the dataset.
+- Perform feature engineering and break down the time series.
+- Use Grid Search with Cross-Validation for tuning.
+- Apply PCA and compare model performance.
+
+**Dataset**
+All the training and test sets, both X nad Y can be downloaded from the dataset folder.
+
+### Evaluation
+All models are evaluated using RMSE, MAE, and R² to measure their predictive accuracy.
+
+
