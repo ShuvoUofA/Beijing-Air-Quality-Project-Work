@@ -41,4 +41,5 @@
 ## Additional Information
 - **References**: [World Health Organization](https://www.who.int), [Bekkar et al., 2021](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00548-1)
 - **License**: ENG M 680 (ADV TOPICS ENG MANAGEMENT II)
-- **Contact Information**: nasimzam@ualberta.ca
+- **Contact Information**: Shuvo Biswas (shuvo.biswas@ualberta.ca), Nasim Zaman Piyas (nasim.piyas@ualberta.ca), Maryum Ali (maryum4@ualberta.ca)
+
