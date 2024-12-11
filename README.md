@@ -39,16 +39,11 @@ The overall goal is to create a robust and scalable prediction model that can en
 
 The repository is organized into the following folders and files:
 
-### Folders:
-
 - **Dataset files**: Contains the raw data used for training and evaluation. This folder includes all the necessary datasets required for the project.
 - **Model Card**: Contains the model card for describing the architecture, use cases, limitations, and other details about the model.
-- **Notebooks**: Holds Jupyter notebooks or other similar files used for exploratory data analysis (EDA), model training, and other research tasks.
+- **Notebooks**: Holds Google Colab notebooks or other similar files used for exploratory data analysis (EDA), model training, and other research tasks.
 - **Project Report**: This folder includes the final project report documenting the methodology, results, and analysis performed throughout the project.
-
-### Files:
-
-- **Architecture Diagrams**: A file containing visual representations of the model architecture, which helps in understanding the flow of data and the components involved.
+- **Architecture Diagrams**: A folder containing visual representations of the model architecture, which helps in understanding the flow of data and the components involved.
 - **README.md**: The README file that provides an overview of the project, instructions for running the code, and other relevant information.
 
 # Project Breakdown
