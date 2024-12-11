@@ -29,14 +29,7 @@
 - **Features**: Pollutant levels (PM2.5, PM10, CO, NO2, SO2, O3), meteorological data (Temperature, Pressure, Wind Direction etc.), temporal patterns (Time of day, Day of week).
 
 - **Model Architecture:** 
-  - A deep neural network (DNN) combining sequential and dense layers to capture complex nonlinear time-series relationships. The architecture includes the Key hyperparameters:
-    - **Number of features:** 16
-    - **Number of Hidden Layers:** 2
-    - **1st hidden layer:** 64
-    - **2nd Hidden Layer:** 128
-    - **Activation Functions:** ReLu
-    - **Optimizer:** Adam
-    - **Epochs: 100**
+  - A Python-based regression model using Pandas and NumPy for preprocessing, Matplotlib/Seaborn for visualization, and linear regression with backward elimination for feature selection and accuracy optimization.
 
 ## Training and Evaluation
 
