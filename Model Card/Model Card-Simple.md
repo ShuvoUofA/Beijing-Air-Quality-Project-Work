@@ -5,7 +5,7 @@
 - **Model Version**: Initial Feasibility Stage
 - **Model Type**: Regression
 - **Developers**: Shuvo Biswas, Nasim Zaman Piyas, Maryum Ali, Izuchukwu Ogbuigbo, Manjot Singh
-- **Release Date**: Not yet released
+- **Release Date**: 10 Dec 2024 
 
 ## Intended Use
 - **Primary Use**: Predicting air pollution levels in Beijing based on weather and pollutant data.
