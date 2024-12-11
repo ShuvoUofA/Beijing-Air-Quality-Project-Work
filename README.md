@@ -59,30 +59,30 @@ The repository is organized into the following folders and files:
    -**Simple Models**
    
 ### 1. Preprocessing
- -Load the dataset using your preferred library (e.g., pandas for CSV files).
- -Check for missing values with data.isnull().sum() and handle them using imputation or removal techniques.
- -Detect and handle outliers using methods like Z-scores or the IQR rule.
- -Normalize numerical features using tools like StandardScaler or MinMaxScaler from sklearn.
- -Encode categorical variables with one-hot encoding or label encoding (LabelEncoder).
+ - Load the dataset using your preferred library (e.g., pandas for CSV files).
+ - Check for missing values with data.isnull().sum() and handle them using imputation or removal techniques.
+ - Detect and handle outliers using methods like Z-scores or the IQR rule.
+ - Normalize numerical features using tools like StandardScaler or MinMaxScaler from sklearn.
+ - Encode categorical variables with one-hot encoding or label encoding (LabelEncoder).
 
 ### 2. Initial EDA
-  -Inspect the dataset's structure using data.info() and data.describe().
-  -Visualize feature distributions using histograms or KDE plots (seaborn.distplot).
-  -Identify correlations using a heatmap (seaborn.heatmap).
-  -Plot pairwise relationships between numerical variables using seaborn.pairplot.
+ - Inspect the dataset's structure using data.info() and data.describe().
+ - Visualize feature distributions using histograms or KDE plots (seaborn.distplot).
+ - Identify correlations using a heatmap (seaborn.heatmap).
+ - Plot pairwise relationships between numerical variables using seaborn.pairplot.
 
 ### 3. Feature Engineering
-  -Extract new features, such as datetime attributes.
-  -Combine or split columns as needed (e.g., extract prefixes, create ratios).
-  -Perform feature selection using methods like correlation thresholds or sklearn.feature_selection. 
-  -Save the transformed dataset for consistency across steps.
+ - Extract new features, such as datetime attributes.
+ - Combine or split columns as needed (e.g., extract prefixes, create ratios).
+ - Perform feature selection using methods like correlation thresholds or sklearn.feature_selection. 
+ - Save the transformed dataset for consistency across steps.
 
 ### 4. Training and Evaluation Pipeline
-  -Split the dataset into training and testing subsets using train_test_split.
-  -Train a baseline model to establish a benchmark.
-  -Train advanced models, optimizing their hyperparameters with tools like GridSearchCV.
-  -Evaluate model performance on the test set using metrics like accuracy or RMSE.
-  -Save the best-performing model for deployment (joblib.dump or pickle).
+ - Split the dataset into training and testing subsets using train_test_split.
+ - Train a baseline model to establish a benchmark.
+ - Train advanced models, optimizing their hyperparameters with tools like GridSearchCV.
+ - Evaluate model performance on the test set using metrics like accuracy or RMSE.
+ - Save the best-performing model for deployment (joblib.dump or pickle).
 
 ### Simple Models
 We explore basic regression models, including:
