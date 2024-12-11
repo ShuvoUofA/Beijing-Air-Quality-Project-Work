@@ -91,14 +91,13 @@ We explore basic regression models, including:
 - PCA-based Regression
 - Random Forest
 - XGBoost, and Support Vector Regressors
-
 **Steps for Simple Models:**
 - Import libraries and upload the dataset.
 - Perform feature engineering and break down the time series.
 - Use Grid Search with Cross-Validation for tuning.
 - Apply PCA and compare model performance.
 
-**Dataset**
+### Dataset
 All the training and test sets, both X nad Y can be downloaded from the dataset folder.
 
 ### Evaluation
