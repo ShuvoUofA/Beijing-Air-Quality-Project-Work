@@ -6,7 +6,7 @@
 - **Model Version:** 1.0
 - **Model Type:** Time-Series Regression Model using RNN
 - **Developers:** Shuvo Biswas, Nasim Zaman Piyas, Maryum Ali, Izuchukwu Ogbuigbo, Manjot Singh
-- **Release Date:** 10th December 2024
+- **Release Date:** December 10, 2024
 
 ---
 
