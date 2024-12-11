@@ -1,4 +1,4 @@
-## General Overview of the Project
+# General Overview of the Project
 
 The **Predicting Air Quality: An Applied AI Approach to Beijing's Pollution Data** is a machine learning-based project aimed at predicting air quality health index in Beijing using data on pollutants and weather variables. The project focuses on developing accurate models that can forecast air quality  and air quality health index over time, helping stakeholders such as policymakers, public health authorities, and environmental researchers make informed decisions to mitigate air pollution's harmful effects on human health and the environment.
 
@@ -35,7 +35,7 @@ Beijing faces significant air quality challenges, especially during certain seas
 
 The overall goal is to create a robust and scalable prediction model that can enhance Beijing's air quality management efforts, reduce health-related costs, and improve the city’s livability.
 
-## Repository Structure
+# Repository Structure
 
 The repository is organized into the following folders and files:
 
