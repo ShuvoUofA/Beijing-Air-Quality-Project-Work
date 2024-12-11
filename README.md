@@ -51,11 +51,7 @@ The repository is organized into the following folders and files:
 - **Architecture Diagrams**: A file containing visual representations of the model architecture, which helps in understanding the flow of data and the components involved.
 - **README.md**: The README file that provides an overview of the project, instructions for running the code, and other relevant information.
 
-# Air Quality Prediction Project
-
-This repository contains the code for predicting air quality based on pollutant data and weather conditions. It includes models ranging from basic linear regression to more complex RNNs and LSTMs for time-series forecasting.
-
-## Project Breakdown
+# Project Breakdown
 1. **Pre-Processing**
 2. **Initial Data Exploration (EDA)**
 3. **Feature Engineering**
