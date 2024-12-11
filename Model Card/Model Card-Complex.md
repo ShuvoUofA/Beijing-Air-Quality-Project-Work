@@ -1,10 +1,10 @@
-# Model Card: Advanced Model for Air Quality Prediction
+# Model Card: Preferred Model for Air Quality Prediction
 
 ## Model Details
 
-- **Model Name:** Deep Neural Network with Time-Series Forecasting
-- **Model Version:** 2.0
-- **Model Type:** Regression (Deep Learning)
+- **Model Name:** Deep neural network designed for time-series forecasting, combining recurrent layers 
+- **Model Version:** 1.0
+- **Model Type:** Time-Series Regression Model using RNN
 - **Developers:** Shuvo Biswas, Nasim Zaman Piyas, Maryum Ali, Izuchukwu Ogbuigbo, Manjot Singh
 - **Release Date:** 10th December 2024
 
@@ -12,87 +12,62 @@
 
 ## Intended Use
 
-- **Primary Use:** Time-series forecasting for air quality prediction in Beijing, with the capability to forecast multiple pollutants over time.
-- **Intended Users:** Environmental researchers, data scientists, urban planners, and policymakers focusing on air quality management and health risk mitigation.
-- **Out-of-Scope Use Cases:** Real-time operational monitoring systems and emergency response frameworks.
+- **Primary Use:** Predicting air pollution levels in Beijing based on weather and pollutant data.
+- **Intended Users:** Public health authorities, Healthcare Providers, Smart City Developers, and Environmental & Health Researchers who are interested to work with air quality data.
+- **Out-of-Scope Use Cases:** Real-time applications and predictions for regions outside Beijing or data outside the training time period (2013–2017).
 
 ---
 
 ## Model/Data Description
 
-- **Data Used:** Air quality data from the Beijing Municipal Environmental Monitoring Center, paired with meteorological data from the China Meteorological Administration.
-  - Features include pollutant concentrations (e.g., PM2.5, PM10, CO, NO2, SO2, O3), weather variables (e.g., temperature, pressure, wind direction, humidity), and time-series components (e.g., time of day, day of the week).
-  - Data spans from March 2013 to February 2017, collected at 12 monitoring stations across Beijing.
+- **Data Used**: 
+  - Air quality data from Beijing Municipal Environmental Monitoring Center.
+  - Weather data from China Meteorological Administration.
+  - Covers hourly data (March 2013–February 2017) from 12 monitoring stations.
+  - Features include pollutant concentrations (e.g., PM2.5, SO2), weather variables (e.g., temperature, pressure), and temporal features.
 
-- **Features:**
-  - **Input Features:** Hourly pollutant concentrations, weather variables, and temporal features (e.g., time of day, day of the week).
-  - **Derived Features:** Lag features, rolling averages, seasonal components, and other time-series-specific transformations.
+- **Features**: Pollutant levels (PM2.5, PM10, CO, NO2, SO2, O3), meteorological data (Temperature, Pressure, Wind Direction etc.), temporal patterns (Time of day, Day of week).
 
 - **Model Architecture:** 
-  - The model is a deep neural network (DNN) designed to capture complex nonlinear relationships in the time-series data.
-  - The architecture includes multiple layers (e.g., dense layers, LSTM layers) for sequential pattern recognition.
-  - Key hyperparameters:
-    - Number of layers: 4
-    - Units per layer: 128
-    - Activation function: ReLU
-    - Optimizer: Adam
-    - Loss function: Mean Squared Error (MSE)
-
----
+  - A deep neural network (DNN) combining sequential and dense layers to capture complex nonlinear time-series relationships. The architecture includes the Key hyperparameters:
+    - **Number of features:** 16
+    - **Train, Validation & Test data ratio:** 7:2:1
+    - **Number of Hidden Layers:** 2
+    - **1st hidden layer:** 64
+    - **2nd Hidden Layer:** 128
+    - **Activation Functions:** ReLu
+    - **Optimizer:** Adam
+    - **Epochs: 100**
 
 ## Training and Evaluation
 
 - **Training Procedure:**
-  - The model is trained using the processed historical air quality data, which includes feature engineering such as lag and rolling features.
-  - A supervised learning approach is used, with the model learning from historical pollutant levels and weather data to predict future air quality values.
-  - **Training Environment:** Python with TensorFlow, Keras, and scikit-learn libraries. The model is trained on a machine with sufficient GPU resources (e.g., Tesla V100).
-
-- **Training Dataset:**
-  - The dataset includes hourly pollutant and weather data, split into training (80%) and testing (20%) datasets.
-  - **Data Sources:**
-    - All the date scource files for Train and Test are uploaded in the Dateset files folder.
+  - The model was trained using historical air quality data from Beijing, with the dataset split into 70% training, 20% validation, and 10% testing. The training process utilized Python and key libraries such as pandas, scikit-learn, and TensorFlow.
 
 - **Evaluation Metrics:**
   - The model is evaluated using common regression metrics:
-    - Mean Absolute Error (MAE)
-    - Root Mean Squared Error (RMSE)
-    - R-squared (R²) Score
+    - Mean Absolute Error (MAE) : **0.302**
+    - Root Mean Squared Error (RMSE) : **0.536**
+    - R-squared (R²) Score : **0.947**
   - The evaluation is conducted on the held-out test dataset to assess how well the model generalizes to unseen data.
 
 - **Baseline Comparison:**
-  - The model's performance is compared to simpler models, such as Linear Regression and more complex models like Recurrent Neural Networks (RNNs), to assess both accuracy and computational efficiency.
-
----
+  - The model was compared against more complex architectures like LSTM, Bi-LSTM, and GRU, as well as simpler regression models, to assess accuracy and computational efficiency.
 
 ## Ethical Considerations
 
-- **Fairness and Bias:**
-  - Efforts have been made to mitigate biases that may arise from data gaps or unequal representation of certain regions in the data collection process.
-  - Bias correction techniques, including resampling and data normalization, are applied to ensure balanced model predictions across all data points.
-
-- **Privacy:**
-  - While the data is anonymized and does not contain personal information, transparency is essential in communicating the implications of model predictions for policy and health recommendations.
-  - Any supplementary data used in the model is carefully handled in compliance with privacy regulations.
-
-- **Security:**
-  - All datasets are stored securely with encryption and access control measures in place to protect against unauthorized access.
-  - Proper data handling practices are followed, ensuring compliance with relevant data security standards.
-
----
+- **Fairness and Bias**: Normalization and balanced representation were applied to address geographic, temporal, and data quality biases. Measures were taken to mitigate biases and handle outliers caused by unforeseen impacts at monitoring stations, ensuring fairness and robustness.
+- **Privacy**: The non-personal training data is anonymized and compliant with privacy regulations, ensuring transparent use for public communication.
+- **Security**: Data is encrypted, access is controlled, and secure storage practices are used to prevent unauthorized access to sensitive air quality data.
 
 ## Limitations and Recommendations
 
 - **Known Limitations:**
-  - The model's complexity means it may require significant computational resources, especially for training and hyperparameter tuning.
   - Performance may degrade on long-term predictions (e.g., 24+ hours) as the model's accuracy tends to decrease over longer forecasting windows, though improvements are anticipated by exploring advanced time-series architectures (e.g., LSTM, GRU).
-  - Seasonal variations and extreme weather events may introduce noise that the model struggles to handle without further fine-tuning.
 
 - **Recommendations for Use:**
-  - The model is best suited for medium-term (1-24 hours) air quality predictions.
-  - It is recommended to experiment with ensemble methods or hybrid models (e.g., combining DNN with RNN) for improved long-term forecasting.
-  - Ideal for decision support in urban planning, environmental policy, and public health advisories.
+  - The model is best suited for short-term (1-3 hours) air quality predictions.
 
----
 
 ## Additional Information
 
