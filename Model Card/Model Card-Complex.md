@@ -31,7 +31,6 @@
 - **Model Architecture:** 
   - A deep neural network (DNN) combining sequential and dense layers to capture complex nonlinear time-series relationships. The architecture includes the Key hyperparameters:
     - **Number of features:** 16
-    - **Train, Validation & Test data ratio:** 7:2:1
     - **Number of Hidden Layers:** 2
     - **1st hidden layer:** 64
     - **2nd Hidden Layer:** 128
@@ -46,9 +45,9 @@
 
 - **Evaluation Metrics:**
   - The model is evaluated using common regression metrics:
-    - Mean Absolute Error (MAE) : **0.302**
-    - Root Mean Squared Error (RMSE) : **0.536**
-    - R-squared (R²) Score : **0.947**
+    - Mean Absolute Error (MAE)
+    - Root Mean Squared Error (RMSE) 
+    - R-squared (R²) Score 
   - The evaluation is conducted on the held-out test dataset to assess how well the model generalizes to unseen data.
 
 - **Baseline Comparison:**
