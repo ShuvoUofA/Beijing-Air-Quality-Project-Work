@@ -6,7 +6,7 @@ This diagram illustrates the end-to-end process for building the predictive air 
 # 2. Achieved Goals
 <img width="546" alt="achieved goals" src="https://github.com/user-attachments/assets/f29edc62-0f46-4557-8e1a-87b6347a2c61" />
 
-The figre above highlights the key objectives of the project that we achieved at the end. It focuses on analyzing seasonal and daily pollution patterns, identifying weather factors linked to pollution, and mapping hotspots in Beijing. A predictive model using weather forecasts is developed to provide timely public advisories. The findings inform actionable policy recommendations, such as adjusting traffic regulations or promoting green initiatives, aligning with broader goals of improving urban air quality and public health outcomes.
+The figure above highlights the key objectives of the project that we achieved at the end. It focuses on analyzing seasonal and daily pollution patterns, identifying weather factors linked to pollution, and mapping hotspots in Beijing. A predictive model using weather forecasts is developed to provide timely public advisories. The findings inform actionable policy recommendations, such as adjusting traffic regulations or promoting green initiatives, aligning with broader goals of improving urban air quality and public health outcomes.
 
 # 3. Model Deployment
 <img width="550" alt="model deployment" src="https://github.com/user-attachments/assets/1de1611d-bf4a-418f-8c4a-83deb847c8e5" />
